@@ -6,7 +6,7 @@
             conversion: [{ name: "AUD", value: "47" }, { name: "USD", value: "61" }]
         },
         {
-            currency: "USA",
+            currency: "USD",
             conversion: [{ name: "AUD", value: ".61" }, { name: "IND", value: ".01" }]
         }
     ];

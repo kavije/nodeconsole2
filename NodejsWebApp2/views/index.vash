@@ -4,12 +4,14 @@
 
 <h1>@model.title</h1>
 <h3> this is from the server</h3>
+<div class="jumbotron">
 @model.currencies.forEach( function(c){
 <div> <h1> @c.currency </h1> </div>
 @c.conversion.forEach(function(s){
 <div><span>@s.name</span></div>
-<div><span>@s.value</span></div>
+<div><span class="badge">@s.value</span></div>
 })
 })
+    </div>
 });
 });
