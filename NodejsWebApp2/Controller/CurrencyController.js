@@ -31,6 +31,18 @@
                 //res.json(JSON.parse(currencyvalue));
 
             });
+
+
+
+            app.get('/api/mapdata', function (req, res) {
+                data.getMapdata(function (err, result) {
+                    res.send(JSON.stringify(result));
+
+                });
+
+
+           
+            });
            
 
         });

@@ -9,7 +9,13 @@
                 return $http.get('/api/currency/'+ fromcur+'/'+tocur);
             }
             
-            return factory;
+            
+            factory.getMapdata = function() {
+              
+                return $http.get('/api/mapdata');
+               
+            }
+        return factory;
 
         }]);
 })(window.angular);

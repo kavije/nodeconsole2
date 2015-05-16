@@ -18,9 +18,7 @@ angular.module('app').directive('gChart', function() {
     return {
         restrict: 'AE',
         link: function(scope, element, attr) {
-            var chart = new google.visualization.LineChart(document.getElementById('chartdiv'));
-
-            chart.draw(scope.chart.data, scope.chart.options);
+            
         }
     }
 

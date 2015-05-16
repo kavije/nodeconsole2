@@ -30,6 +30,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controller\MapController.js" />
+    <Compile Include="data\mapData.js" />
     <Compile Include="public\app\Currency\CurrencyController.js" />
     <Compile Include="public\app\Currency\CurrencyFactory.js" />
     <Compile Include="public\app\MainModule.js" />
