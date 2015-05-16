@@ -26,7 +26,9 @@
                }
                
            }
-             res.render("currency", { title: "express+vash" , error: err, res: currencyvalue });
+             //res.render("currency", { title: "express+vash" , error: err, res: currencyvalue });
+              res.send(JSON.stringify(currencyvalue));
+                //res.json(JSON.parse(currencyvalue));
 
             });
            

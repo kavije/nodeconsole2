@@ -7,7 +7,11 @@
         },
         {
             currency: "USD",
-            conversion: [{ name: "AUD", value: ".61" }, { name: "IND", value: ".01" }]
+            conversion: [{ name: "AUD", value: "0.61" }, { name: "IND", value: "0.01" }]
+        },
+        {
+            currency: "AUD",
+            conversion: [{ name: "USD", value: "0.61" }, { name: "IND", value: "0.01" }]
         }
     ];
 })(module.exports);

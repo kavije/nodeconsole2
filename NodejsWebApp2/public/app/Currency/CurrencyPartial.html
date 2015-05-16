@@ -1,0 +1,80 @@
+﻿<div class="row spacer"></div>
+<div class="row spacer"></div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <span><h3>1 {{foo.value}} equals</h3></span>
+            <span><h2>{{initial}} {{toCurrency.value}}</h2></span>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+
+
+            <div class="row spacer">
+                <div class="col-md-5">
+                    <input type="text" class="input-sm"
+                           value="{{convertCurValue}}"
+                           maxlength="10"
+                           type="number"
+                           step="any"
+                           ng-model="convertCurValue" ng-change="change1()" />
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class=" ccw_unit_selector_cnt " style="max-width: 100%;">
+                        <select class="ccw_unit_selector vk_bk vk_txt"
+                                ng-init="foo = foo || currencyList[0]"
+                                ng-model="foo"
+                                ng-options="item as item.value for item in currencyList"
+                                ng-change="changed()"></select>
+                        <div class="ccw_selector_bg"></div>
+                        <div class="ccw_selector_arrows"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row"></div>
+            <div class="row spacer">
+                <div class="col-md-5">
+                    <input type="text" class="input-sm"
+                           value="{{convertedValue}}"
+                           maxlength="10"
+                           type="number"
+                           step="any"
+                           ng-model="convertedValue" ng-change="change2()" />
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <div class=" ccw_unit_selector_cnt " style="max-width: 100%;">
+                        <select class=" ccw_unit_selector vk_bk vk_txt"
+                                ng-init="toCurrency = toCurrency || currencyList[1]"
+                                ng-model="toCurrency"
+                                ng-options="item as item.value for item in currencyList"
+                                ng-change="changed()"></select>
+                        <div class="ccw_selector_bg"></div>
+                        <div class="ccw_selector_arrows"></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div id="chartdiv" g-chart class="chart" style="padding-top: -1%; padding-left: -7%;"></div>
+        </div>
+    </div>
+
+
+
+    
+</div>

@@ -30,11 +30,26 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="public\app\Currency\CurrencyController.js" />
+    <Compile Include="public\app\Currency\CurrencyFactory.js" />
+    <Compile Include="public\app\MainModule.js" />
     <Compile Include="Controller\CurrencyController.js" />
     <Compile Include="Controller\HomeController.js" />
     <Compile Include="Controller\index.js" />
     <Compile Include="data\index.js" />
     <Compile Include="data\seedData.js" />
+    <Compile Include="public\lib\angular-bootstrap\ui-bootstrap-tpls.js" />
+    <Compile Include="public\lib\angular-bootstrap\ui-bootstrap-tpls.min.js" />
+    <Compile Include="public\lib\angular-bootstrap\ui-bootstrap.js" />
+    <Compile Include="public\lib\angular-bootstrap\ui-bootstrap.min.js" />
+    <Compile Include="public\lib\angular-charts\dist\angular-charts.js" />
+    <Compile Include="public\lib\angular-charts\dist\angular-charts.min.js" />
+    <Compile Include="public\lib\angular-route\angular-route.js" />
+    <Compile Include="public\lib\angular-route\angular-route.min.js" />
+    <Compile Include="public\lib\angular-route\index.js" />
+    <Compile Include="public\lib\angular\angular.js" />
+    <Compile Include="public\lib\angular\angular.min.js" />
+    <Compile Include="public\lib\angular\index.js" />
     <Compile Include="public\lib\bootstrap\dist\js\bootstrap.js" />
     <Compile Include="public\lib\bootstrap\dist\js\bootstrap.min.js" />
     <Compile Include="public\lib\bootstrap\dist\js\npm.js" />
@@ -56,6 +71,8 @@
     <Compile Include="public\lib\bootstrap\js\tooltip.js" />
     <Compile Include="public\lib\bootstrap\js\transition.js" />
     <Compile Include="public\lib\bootstrap\package.js" />
+    <Compile Include="public\lib\d3\d3.js" />
+    <Compile Include="public\lib\d3\d3.min.js" />
     <Compile Include="public\lib\jquery\dist\jquery.js" />
     <Compile Include="public\lib\jquery\dist\jquery.min.js" />
     <Compile Include="public\lib\jquery\src\ajax.js" />
@@ -143,8 +160,29 @@
     <Compile Include="public\lib\jquery\src\wrap.js" />
     <Compile Include="server.js" />
     <Content Include=".bowerrc" />
+    <Content Include="public\app\Currency\CurrencyPartial.html" />
     <Content Include="package.json" />
     <Content Include="public\css\Site.css" />
+    <Content Include="public\images\download.png" />
+    <Content Include="public\lib\angular-bootstrap\.bower.json" />
+    <Content Include="public\lib\angular-bootstrap\bower.json" />
+    <Content Include="public\lib\angular-bootstrap\ui-bootstrap-csp.css" />
+    <Content Include="public\lib\angular-charts\.bower.json" />
+    <Content Include="public\lib\angular-charts\bower.json" />
+    <Content Include="public\lib\angular-charts\LICENSE" />
+    <Content Include="public\lib\angular-charts\README.md" />
+    <Content Include="public\lib\angular-route\.bower.json" />
+    <Content Include="public\lib\angular-route\angular-route.min.js.map" />
+    <Content Include="public\lib\angular-route\bower.json" />
+    <Content Include="public\lib\angular-route\package.json" />
+    <Content Include="public\lib\angular-route\README.md" />
+    <Content Include="public\lib\angular\.bower.json" />
+    <Content Include="public\lib\angular\angular-csp.css" />
+    <Content Include="public\lib\angular\angular.min.js.gzip" />
+    <Content Include="public\lib\angular\angular.min.js.map" />
+    <Content Include="public\lib\angular\bower.json" />
+    <Content Include="public\lib\angular\package.json" />
+    <Content Include="public\lib\angular\README.md" />
     <Content Include="public\lib\bootstrap\.bower.json" />
     <Content Include="public\lib\bootstrap\bower.json" />
     <Content Include="public\lib\bootstrap\dist\css\bootstrap-theme.css" />
@@ -243,6 +281,11 @@
     <Content Include="public\lib\bootstrap\LICENSE" />
     <Content Include="public\lib\bootstrap\package.json" />
     <Content Include="public\lib\bootstrap\README.md" />
+    <Content Include="public\lib\d3\.bower.json" />
+    <Content Include="public\lib\d3\bower.json" />
+    <Content Include="public\lib\d3\CONTRIBUTING.md" />
+    <Content Include="public\lib\d3\LICENSE" />
+    <Content Include="public\lib\d3\README.md" />
     <Content Include="public\lib\jquery\.bower.json" />
     <Content Include="public\lib\jquery\bower.json" />
     <Content Include="public\lib\jquery\dist\jquery.min.map" />
@@ -255,11 +298,18 @@
     <Content Include="views\layout.vash" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="public\app\Currency\" />
     <Folder Include="Controller\" />
     <Folder Include="data\" />
+    <Folder Include="public\app\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="public\lib\" />
+    <Folder Include="public\lib\angular-bootstrap\" />
+    <Folder Include="public\lib\angular-charts\" />
+    <Folder Include="public\lib\angular-charts\dist\" />
+    <Folder Include="public\lib\angular-route\" />
+    <Folder Include="public\lib\angular\" />
     <Folder Include="public\lib\bootstrap\" />
     <Folder Include="public\lib\bootstrap\dist\" />
     <Folder Include="public\lib\bootstrap\dist\css\" />
@@ -270,6 +320,7 @@
     <Folder Include="public\lib\bootstrap\js\" />
     <Folder Include="public\lib\bootstrap\less\" />
     <Folder Include="public\lib\bootstrap\less\mixins\" />
+    <Folder Include="public\lib\d3\" />
     <Folder Include="public\lib\jquery\" />
     <Folder Include="public\lib\jquery\dist\" />
     <Folder Include="public\lib\jquery\src\" />
@@ -293,6 +344,7 @@
     <Folder Include="public\lib\jquery\src\traversing\" />
     <Folder Include="public\lib\jquery\src\traversing\var\" />
     <Folder Include="public\lib\jquery\src\var\" />
+    <Folder Include="public\images\" />
     <Folder Include="views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

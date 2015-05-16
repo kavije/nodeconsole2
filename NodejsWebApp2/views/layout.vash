@@ -6,16 +6,41 @@
     <title>@model.title</title>
     <link rel="stylesheet" href="/css/Site.css"/>
     <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
-    <script src="/lib/jquery/dist/jquery.min.js"></script>
-<script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet"/>
 
+
+
+     <script src="/lib/angular/angular.min.js"></script>
+     <script src="/lib/angular-route/angular-route.min.js"></script>
+     <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <!-- <script src="/lib/d3/d3.min.js"></script>
+    <script src="/lib/angular-charts/dist/angular-charts.min.js"></script>-->
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+  <!--   <script data-require="d3@*" data-semver="3.3.11" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.11/d3.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/chinmaymk/angular-charts/bower/dist/angular-charts.min.js"></script>
+   -->
+
+     
+
+    <script src="/app/MainModule.js"></script>
+   <script src="/app/Currency/CurrencyController.js"></script>
+    <script src="/app/Currency/CurrencyFactory.js"></script>
 
 </head>
 
 <body>
-<div> @html.block("body")
-<div>
+
+    <div  data-ng-app="app" data-ng-view="">
+       
+</div>
+
+
 </body>
 </html>
 
