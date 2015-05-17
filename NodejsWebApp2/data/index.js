@@ -1,5 +1,5 @@
 ﻿(function(data) {
-
+    //index for registering data services
     var seeddata = require('./seedData');
     var mapdata = require('./mapData.js');
 

@@ -1,6 +1,7 @@
 ﻿(function (MapController) {
     var data = require('../data');
-    var jsonQuery = require('json-query');
+    //api for handling map data
+
     MapController.init = function (app) {
         app.get('/api/mapdata', function (req, res) {
             data.getmap(function (err, result) {
@@ -8,17 +9,9 @@
 
                 res.send(JSON.stringify(result));
 
-
+                });
             });
 
-
-           
-        });
-
-       
-
-      
-
-    };
+     };
 
 })(module.exports);

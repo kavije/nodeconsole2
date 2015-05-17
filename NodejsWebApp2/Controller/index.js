@@ -1,4 +1,5 @@
 ﻿(function(Controller) {
+    //controller index
 
     var HomeController = require('./HomeController');
     var CurrencyController = require('./CurrencyController');

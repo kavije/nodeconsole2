@@ -1,7 +1,9 @@
 ﻿(function(CurrencyController) {
     var data = require('../data');
-    //var jsonQuery = require('json-query');
-    CurrencyController.init = function(app) {
+
+    //api handling the currencydata
+
+         CurrencyController.init = function(app) {
         app.get('/api/currency/:fromcur/:tocur', function (req, res) {
             
             var fromcur = req.params.fromcur;
@@ -10,7 +12,7 @@
             var currencyvalue = 0;
             data.getcurrencies(function (err, result) {
 
-                //  var curnode  = result.find(currency = fromcur);
+               
            for (var i = 0; i < result.length; i++) {
                if (result[i].currency === fromcur) {
 
@@ -21,30 +23,11 @@
                            currencyvalue = resultcur[j].value;
                        }
                    }
-                 
-
+                 }
                }
-               
-           }
-             //res.render("currency", { title: "express+vash" , error: err, res: currencyvalue });
-              res.send(JSON.stringify(currencyvalue));
-                //res.json(JSON.parse(currencyvalue));
+             res.send(JSON.stringify(currencyvalue));
+    });
 
-            });
-
-
-
-            app.get('/api/mapdata', function (req, res) {
-                data.getMapdata(function (err, result) {
-                    res.send(JSON.stringify(result));
-
-                });
-
-
-           
-            });
-           
-
-        });
+ });
     }
 })(module.exports);
