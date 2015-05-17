@@ -296,7 +296,6 @@
     <Content Include="public\lib\jquery\src\sizzle\dist\sizzle.min.map" />
     <Content Include="README.md" />
     <Content Include="views\currency.vash" />
-    <Content Include="views\HTML1.html" />
     <Content Include="views\index.vash" />
     <Content Include="views\layout.vash" />
   </ItemGroup>
