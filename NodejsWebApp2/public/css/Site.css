@@ -95,6 +95,7 @@ select {
 .currencyValueEquals{
     margin-top: 15px;
     font-size: 120%;
+    color: #878787;
 }
 
 .currencyValue{
@@ -114,5 +115,5 @@ select {
     font-family: arial,sans-serif-light,sans-serif;
     font-size: medium !important;
     font-weight: lighter !important;
-    color: #878787 !important;
+    color:#878787 !important;
 }
