@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebApp2", "NodejsWebApp2\NodejsWebApp2.njsproj", "{B5022B14-310B-4279-8E83-4C6C32E5626F}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "GoogleCurrencyConverter", "NodejsWebApp2\GoogleCurrencyConverter.njsproj", "{B5022B14-310B-4279-8E83-4C6C32E5626F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
