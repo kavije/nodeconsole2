@@ -115,10 +115,10 @@
             //function handing textbox changes
             $scope.change1 = function() {
                 console.log($scope.convertCurValue);
-                $scope.convertedValue = ($scope.convertCurValue) ? ($scope.convertCurValue * $scope.initial).toFixed(2) : "";
+                $scope.convertedValue = (Number($scope.convertCurValue)) ? ($scope.convertCurValue * $scope.initial).toFixed(2) : "";
             }
             $scope.change2 = function() {
-                $scope.convertCurValue = ($scope.convertedValue) ? ($scope.convertedValue / $scope.initial).toFixed(2) : "";
+                $scope.convertCurValue = (Number($scope.convertedValue)) ? ($scope.convertedValue / $scope.initial).toFixed(2) : "";
             }
         }
     ]);
